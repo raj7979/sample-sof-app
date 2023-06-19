@@ -12,8 +12,8 @@ import {BehaviorSubject} from "rxjs";
 export class EmrAuthService {
 
   public oktaAuth = new OktaAuth({
-    clientId: '0oa2jnny1mJQc3gwR1d7',
-    issuer: 'https://wellhealth.oktapreview.com/oauth2/aus1trldvwYSoOtK01d7',
+    clientId: '0oa628gv2xxpowqr1697',
+    issuer: 'https://oscarpro.okta.com/oauth2/aus4981892cM7e9a1697',
     redirectUri: 'sof/oktacallback',
     //tokenUrl: "http://silverfir:8080/kaiemr/smart/proxy/v1/token",
     scopes: ['patient/Patient.read', 'patient/Observation.read', 'launch', 'openid', 'email', 'profile'],
@@ -35,8 +35,8 @@ export class EmrAuthService {
     this.configuredLaunchParam = launchParameter;
 
     this.oktaAuth = new OktaAuth({
-      clientId: '0oa2jnny1mJQc3gwR1d7',
-      issuer: 'https://wellhealth.oktapreview.com/oauth2/aus1trldvwYSoOtK01d7',
+      clientId: '0oa628gv2xxpowqr1697',
+      issuer: 'https://oscarpro.okta.com/oauth2/aus4981892cM7e9a1697',
       redirectUri: 'sof/oktacallback',
       //tokenUrl: "http://silverfir:8080/kaiemr/smart/proxy/v1/token",
       scopes: ['patient/Patient.read', 'patient/Observation.read', 'launch', 'openid', 'email', 'profile'],
