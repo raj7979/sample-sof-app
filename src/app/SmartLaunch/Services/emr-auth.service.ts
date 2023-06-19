@@ -16,7 +16,7 @@ export class EmrAuthService {
     issuer: 'https://oscarpro.okta.com/oauth2/aus4981892cM7e9a1697',
     redirectUri: 'sof/oktacallback',
     //tokenUrl: "http://silverfir:8080/kaiemr/smart/proxy/v1/token",
-    scopes: ['patient/Patient.read', 'patient/Observation.read', 'launch', 'openid', 'email', 'profile'],
+    scopes: ['patient/Patient.read', 'patient/Observation.read', 'launch/patient', 'openid', 'email', 'profile'],
     pkce: true
   });
 
@@ -39,7 +39,7 @@ export class EmrAuthService {
       issuer: 'https://oscarpro.okta.com/oauth2/aus4981892cM7e9a1697',
       redirectUri: 'sof/oktacallback',
       //tokenUrl: "http://silverfir:8080/kaiemr/smart/proxy/v1/token",
-      scopes: ['patient/Patient.read', 'patient/Observation.read', 'launch', 'openid', 'email', 'profile'],
+      scopes: ['patient/Patient.read', 'patient/Observation.read', 'launch/patient', 'openid', 'email', 'profile'],
       pkce: true
       //  , state: launchParameter // if not set, then Okta will set it
     });
