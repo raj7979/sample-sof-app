@@ -116,7 +116,7 @@ export class AuthenticationWorkflowService {
     let oauthEndpoints: EmrOauthEndpoints | undefined;
     if (this.isApplicationConfigured() == false) {
      //this.parseLaunchParameters();
-     this.oktaAuthService.launchBaseFhirUrl="https://apps-health.kai-oscar.com/kaiemr/api/fhir/r4/clinic/"
+     this.oktaAuthService.launchBaseFhirUrl="https://interop.kai-oscar.com/kaiemr/api/fhir/r4/clinic/"
 
       oauthEndpoints = await this.getFhirWellKnown(<string> this.oktaAuthService.launchBaseFhirUrl);
       if (oauthEndpoints === undefined) {
