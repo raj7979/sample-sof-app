@@ -14,9 +14,9 @@ export class EmrAuthService {
   public oktaAuth = new OktaAuth({
     clientId: '0oa628gv2xxpowqr1697',
     issuer: 'https://oscarpro.okta.com/oauth2/aus4981892cM7e9a1697',
-    redirectUri: 'sof/oktacallback',
+    redirectUri: 'sample-sof-app/oktacallback',
     //tokenUrl: "http://silverfir:8080/kaiemr/smart/proxy/v1/token",
-    scopes: ['patient/Patient.read', 'patient/Observation.read', 'launch/patient', 'openid', 'email', 'profile'],
+    scopes: ['user/Patient.read', 'user/Observation.read', 'launch/patient', 'openid', 'email', 'profile'],
     pkce: true
   });
 
