@@ -12,7 +12,7 @@ import {BehaviorSubject} from "rxjs";
 export class EmrAuthService {
 
   public oktaAuth = new OktaAuth({
-    clientId: '0oa628gv2xxpowqr1697',
+    clientId: '0oa665xop5dZ2yhR8697',
     issuer: 'https://oscarpro.okta.com/oauth2/aus4981892cM7e9a1697',
     redirectUri: 'sample-sof-app/oktacallback',
     //tokenUrl: "http://silverfir:8080/kaiemr/smart/proxy/v1/token",
@@ -35,7 +35,7 @@ export class EmrAuthService {
     this.configuredLaunchParam = launchParameter;
 
     this.oktaAuth = new OktaAuth({
-      clientId: '0oa628gv2xxpowqr1697',
+      clientId: '0oa665xop5dZ2yhR8697',
       issuer: 'https://oscarpro.okta.com/oauth2/aus4981892cM7e9a1697',
       redirectUri: 'sample-sof-app/oktacallback',
       //tokenUrl: "http://silverfir:8080/kaiemr/smart/proxy/v1/token",
