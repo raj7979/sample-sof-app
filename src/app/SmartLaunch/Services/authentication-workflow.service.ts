@@ -135,7 +135,7 @@ export class AuthenticationWorkflowService {
         emrOauthConfig.isPKCE = true;
         emrOauthConfig.clientId = <string>this.oktaAuthService.clientId;
         emrOauthConfig.issuer = issuerExtract[1];
-        emrOauthConfig.redirectUrl = 'oktacallback';
+        emrOauthConfig.redirectUrl = 'sample-sof-app/oktacallback';
         emrOauthConfig.scopes = this.emrScopes.split(',');
 
         this.oktaAuthService.storeEmrOAuthParameters(emrOauthConfig);
