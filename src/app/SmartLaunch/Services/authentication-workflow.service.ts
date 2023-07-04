@@ -150,5 +150,5 @@ export class AuthenticationWorkflowService {
 
 
   private authIssuerRegEx = '(.*)\\/v1\\/authorize';
-  private emrScopes = 'patient/Patient.read';  // comma separated list
+  private emrScopes = 'user/Patient.read, user/Observation.read, launch/patient';  // comma separated list
 }
