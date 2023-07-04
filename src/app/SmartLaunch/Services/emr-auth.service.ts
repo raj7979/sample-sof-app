@@ -58,8 +58,8 @@ export class EmrAuthService {
 
     // Next two lines may be helpful for catching network traces with the /authorize request
     // to see the parameters that are sent, in paricular the &launch param
-     await new Promise(r => setTimeout(r, 7000));
-     console.log("!!!!!!!!!!!!!!!!!   sleeping in isAuthenticated, hit debug quick!!!!!" );
+    // await new Promise(r => setTimeout(r, 7000));
+    // console.log("!!!!!!!!!!!!!!!!!   sleeping in isAuthenticated, hit debug quick!!!!!" );
 
     // Checks if there is a current accessToken in the TokenManger.
     let accessToken:string = await this.oktaAuth.tokenManager.get('accessToken');
